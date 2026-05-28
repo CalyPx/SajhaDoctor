@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Eye, EyeOff, Mail, Lock, ArrowRight, Shield } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router';
 import { useAuth } from './AuthContext';
-
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../firebase';
 const Input = ({ icon: Icon, error, label, ...props }) => {
   const [focused, setFocused] = useState(false);
   return (
@@ -58,16 +59,14 @@ export default function Login() {
           navigate(redirectTo, { replace: true });
         } else {
           // Otherwise determine dashboard from user type
-          const { doc: firestoreDoc, getDoc } = await import('firebase/firestore');
-          const { db } = await import('../../firebase');
-          const snap = await getDoc(firestoreDoc(db, 'users', result.user.uid));
+          const snap = await getDoc(doc(db, 'users', result.user.uid));
           const type = snap.exists() ? snap.data().userType : 'patient';
           navigate(type === 'doctor' ? '/doctor' : '/dashboard', { replace: true });
         }
       } else {
         setErrors({ general: result.error });
       }
-    } catch (error) { setErrors({ general: 'Network error. Please try again.' }); }
+    } catch (error) { setErrors({ general: error.message || 'An error occurred. Please try again.' }); }
     finally { setLoading(false); }
   };
 

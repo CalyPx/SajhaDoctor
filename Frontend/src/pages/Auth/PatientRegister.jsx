@@ -143,7 +143,7 @@ const PatientRegister = () => {
       const result = await firebaseRegister(data);
       if (result.success) setSuccess(true);
       else setErrors({ general: result.error });
-    } catch (error) { setErrors({ general: 'Network error. Please try again.' }); }
+    } catch (error) { setErrors({ general: error.message || 'An error occurred. Please try again.' }); }
     finally { setLoading(false); }
   };
 
