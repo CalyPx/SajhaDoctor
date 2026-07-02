@@ -15,10 +15,10 @@
 
 ## 🌟 Introduction & Project Vision
 
-**SajhaDoctor (साझा डाक्टर)** is a state-of-the-art, bilingual (English & Nepali) telehealth web application built to bridge the healthcare accessibility gap in Nepal. 
+**SajhaDoctor (साझा डाक्टर)** is a state-of-the-art, bilingual (English & Nepali) telehealth web application built to bridge the healthcare accessibility gap in Nepal.
 
 ### The Core Problem in Nepal
-In Nepal, medical resources and NMC-certified specialist doctors are heavily concentrated in Kathmandu and other major cities. Citizens in rural and mountainous areas often have to walk 4+ hours or travel days just for minor medical checkups and consultations. 
+In Nepal, medical resources and NMC-certified specialist doctors are heavily concentrated in Kathmandu and other major cities. Citizens in rural and mountainous areas often have to walk 4+ hours or travel days just for minor medical checkups and consultations.
 
 ### The SajhaDoctor Solution
 SajhaDoctor offers an affordable, immediate, and high-quality remote solution. Through secure video consultations, patient-doctor matching, health record vaults, and digital prescriptions, families across Nepal can receive expert medical advice from the comfort of their homes.
@@ -54,9 +54,11 @@ SajhaDoctor is engineered with a modern, high-performance web architecture:
 * **Bilingual Core:** Lightweight context-based translation framework (`LanguageContext`) translating Devanagari and English locales instantly.
 
 ### Backend & Infrastructure
-* **Authentication:** Firebase Authentication (for email/password registration, password resets, and session persistence).
+* **Authentication:** Firebase Authentication (email/password registration, password resets, and session persistence).
 * **Database:** Firebase Firestore (NoSQL database managing doctor specialties, user profiles, real-time appointments, and prescriptions).
-* **Cloud Storage:** Firebase Storage (for patient medical records, profile images, and digital signatures).
+* **Cloud Storage:** Firebase Storage (patient medical records, profile images, and digital signatures).
+
+> **Architecture note:** SajhaDoctor uses a fully decoupled, Firebase-first architecture with no separate backend server. All data, auth, and storage operations go directly through the Firebase SDK.
 
 ---
 
@@ -73,8 +75,8 @@ Frontend/
 │   ├── i18n/               # Language Context and translation dictionaries (EN/NE)
 │   ├── pages/              # Portal pages and shells
 │   │   ├── Auth/           # Firebase Auth logic, registration for patients & doctors
-│   │   ├── Patient/        # Patient Dashboard pages (Find Doctor, Medical Records, Appointments)
-│   │   ├── Doctor/         # Doctor Dashboard pages (Prescriptions, Patients, Appointments, Analytics)
+│   │   ├── patient/        # Patient Dashboard pages (Find Doctor, Medical Records, Appointments)
+│   │   ├── doctor/         # Doctor Dashboard pages (Prescriptions, Patients, Appointments, Analytics)
 │   │   └── DashboardShell.jsx # Integrated modular dashboard wrapper for both roles
 │   ├── styles/             # Global CSS rules and custom theme utilities
 │   ├── utils/              # Helper functions and hooks
@@ -104,35 +106,43 @@ cd SajhaDoctor/Frontend
 npm install
 ```
 
-### 3. Setup Firebase Configuration
-Open `src/firebase.js` and input your Firebase project credentials or customize them:
+### 3. Setup Environment Variables
+Create a `.env` file in the root of the `Frontend` directory and add your Firebase project credentials:
+
+```env
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```
+
+> ⚠️ Never commit your `.env` file to GitHub. Make sure `.env` is listed in your `.gitignore`.
+
+Get these values from your [Firebase Console](https://console.firebase.google.com/) under **Project Settings → Your Apps → SDK setup and configuration**.
+
+The `src/firebase.js` file reads these variables automatically:
+
 ```javascript
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
-}
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+};
 ```
 
-### 4. Setup Environment Variables
-Create a `.env` file in the root of the `Frontend` directory if you need API backend urls:
-```env
-VITE_API_URL=http://localhost:8000
-VITE_APP_NAME=SajhaDoctor
-VITE_DEBUG_MODE=true
-```
-
-### 5. Run the Local Development Server
+### 4. Run the Local Development Server
 ```bash
 npm run dev
 ```
-Open your browser and navigate to `http://localhost:5173` to view the running app.
+
+Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to view the running app.
 
 ---
-
 
 ## 🤝 Contributing
 Contributions to SajhaDoctor are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
