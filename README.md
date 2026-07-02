@@ -1,166 +1,168 @@
+# 🏥 SajhaDoctor (साझा डाक्टर) — Telehealth Platform
+
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Rohit%20Poudel&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Building%20things%20that%20actually%20work&descAlignY=51&descAlign=50" width="100%"/>
-
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6EF7F7&center=true&vCenter=true&width=600&lines=Machine+Learning+%7C+IoT+%7C+Full-Stack;Python+Developer+%7C+AICN+%7C+Nepal;I+build+things+that+actually+work.)](https://git.io/typing-svg)
-
-<br/>
-
-<img src="./terminal.svg" alt="Terminal animation" width="700"/>
-
+  <img src="Frontend/public/logo.png" alt="SajhaDoctor Logo" width="220"/>
+  <p><strong>Connecting Patients and Doctors Across Nepal — Anytime, Anywhere.</strong></p>
+  
+  [![React Version](https://img.shields.io/badge/React-v19.1.0-blue?style=flat-square&logo=react)](https://react.dev/)
+  [![Vite Version](https://img.shields.io/badge/Vite-v7.0.4-646CFF?style=flat-square&logo=vite)](https://vite.dev/)
+  [![Firebase](https://img.shields.io/badge/Firebase-v12.12.0-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://firebase.google.com/)
+  [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4.1.11-38B2AC?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+  [![NMC Verified](https://img.shields.io/badge/NMC_Doctors-Verified-green?style=flat-square)](https://www.nmc.org.np/)
 </div>
 
 ---
 
-## 🧠 About Me
+## 🌟 Introduction & Project Vision
 
-I got into coding because I wanted to **build things that actually work** — not just write code for the sake of it.
+**SajhaDoctor (साझा डाक्टर)** is a state-of-the-art, bilingual (English & Nepali) telehealth web application built to bridge the healthcare accessibility gap in Nepal. 
 
-What began as curiosity about how websites are built in school quickly grew into a deep interest in **machine learning, IoT, and full-stack development**. I've never waited for formal instruction. When I want to build something, I learn through documentation, experimentation, and iteration.
+### The Core Problem in Nepal
+In Nepal, medical resources and NMC-certified specialist doctors are heavily concentrated in Kathmandu and other major cities. Citizens in rural and mountainous areas often have to walk 4+ hours or travel days just for minor medical checkups and consultations. 
 
-- 🏔️ Based in **Kathmandu, Nepal**
-- 🎓 Completing **AI/ML Microdegree** at AICN (AI Community of Nepal)
-- 🤖 Passionate about **ML models, IoT systems & real-world AI applications**
-- 🌱 Always exploring — when a new AI tool drops, I want to try it immediately
-- 🎸 Outside of tech: **Guitar & Music**
-- 📬 **rohitpoudel020@gmail.com**
-- 🌐 **[rohitpoudel.com.np](https://www.rohitpoudel.com.np)**
+### The SajhaDoctor Solution
+SajhaDoctor offers an affordable, immediate, and high-quality remote solution. Through secure video consultations, patient-doctor matching, health record vaults, and digital prescriptions, families across Nepal can receive expert medical advice from the comfort of their homes.
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Key Features
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🌍 Disaster Prediction System</h3>
-      <p align="center">Trained an <strong>XGBoost model</strong> on <strong>260,000+</strong> real building records from the 2015 Gorkha earthquake to predict which structures are most at risk of damage.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/XGBoost-F97316?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">🏥 SajhaDoctor — Telehealth Platform</h3>
-      <p align="center">A full-stack <strong>doctor-patient consultation platform</strong> built with React and Node.js, enabling remote healthcare access across Nepal.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🏠 IoT Smart Residence System</h3>
-      <p align="center">An <strong>Arduino-based smart home system</strong> using environmental sensors for automated monitoring, lighting and alert systems.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white"/>
-        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white"/>
-        <img src="https://img.shields.io/badge/IoT-Embedded-green?style=flat-square"/>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">🎨 Jamarko — Talent Platform</h3>
-      <p align="center">A community-driven platform where people could <strong>showcase and discover talents</strong> — art, music, dance. Built and promoted with real active users.</p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-      </p>
-    </td>
-  </tr>
-</table>
+### 👤 Patient Portal
+* **Verified Doctor Directory:** Browse and filter NMC-certified medical specialists across categories like Cardiology, Dermatology, Pediatrics, Orthopedics, and General Medicine.
+* **Instant Consultations & Appointments:** Schedule virtual appointments at convenient slots with transparent consultation fees.
+* **Digital Medical Vault:** Access personal health records, upload vitals, and view past medical history securely.
+* **Prescription Tracker:** Receive and download digital prescriptions issued by doctors to purchase medications directly from local pharmacies.
+* **Bilingual Experience:** Seamlessly switch the entire application interface between English and Devanagari (नेपाली) with a single click.
+
+### 🥼 Doctor Portal
+* **Practitioner Dashboard:** Overview of daily/weekly schedules, pending appointments, and patient queues.
+* **E-Prescription System:** Write and issue digital prescriptions securely directly through the platform.
+* **Patient History Records:** View history, previous diagnoses, test results, and notes uploaded by patients to provide personalized care.
+* **Consultation Analytics:** Track total consultations done, earnings, and patient satisfaction ratings over time.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack & Architecture
+
+SajhaDoctor is engineered with a modern, high-performance web architecture:
+
+### Frontend
+* **Core:** React 19 & Vite (for lightning-fast development builds and optimized asset bundles).
+* **Routing:** React Router v7 / v8 for client-side routing.
+* **Styling:** Tailwind CSS (v4) for responsive utility-first layouts, supplemented by custom components and interactive animations using Framer Motion.
+* **Icons:** Lucide React.
+* **Bilingual Core:** Lightweight context-based translation framework (`LanguageContext`) translating Devanagari and English locales instantly.
+
+### Backend & Infrastructure
+* **Authentication:** Firebase Authentication (for email/password registration, password resets, and session persistence).
+* **Database:** Firebase Firestore (NoSQL database managing doctor specialties, user profiles, real-time appointments, and prescriptions).
+* **Cloud Storage:** Firebase Storage (for patient medical records, profile images, and digital signatures).
+
+---
+
+## 📂 Project Structure
+
+A clean, modular layout separates layout components, styles, utility functions, and view pages:
+
+```bash
+Frontend/
+├── public/                 # Static assets, logos, doctor avatars
+├── src/
+│   ├── assets/             # SVG and vector files
+│   ├── components/         # Reusable structural components (Landing pages, Navbars, Error boundaries, Protected routes)
+│   ├── i18n/               # Language Context and translation dictionaries (EN/NE)
+│   ├── pages/              # Portal pages and shells
+│   │   ├── Auth/           # Firebase Auth logic, registration for patients & doctors
+│   │   ├── Patient/        # Patient Dashboard pages (Find Doctor, Medical Records, Appointments)
+│   │   ├── Doctor/         # Doctor Dashboard pages (Prescriptions, Patients, Appointments, Analytics)
+│   │   └── DashboardShell.jsx # Integrated modular dashboard wrapper for both roles
+│   ├── styles/             # Global CSS rules and custom theme utilities
+│   ├── utils/              # Helper functions and hooks
+│   ├── firebase.js         # Firebase client initialization
+│   └── main.jsx            # Application entry point
+├── package.json            # Build configs & dependencies
+└── vite.config.js          # Vite build optimizations
+```
+
+---
+
+## ⚙️ Getting Started & Local Installation
+
+Follow these steps to set up the development environment and run SajhaDoctor on your local machine:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) (version 18 or above) installed.
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Code4Sake/SajhaDoctor.git
+cd SajhaDoctor/Frontend
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Setup Firebase Configuration
+Open `src/firebase.js` and input your Firebase project credentials or customize them:
+```javascript
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
+}
+```
+
+### 4. Setup Environment Variables
+Create a `.env` file in the root of the `Frontend` directory if you need API backend urls:
+```env
+VITE_API_URL=http://localhost:8000
+VITE_APP_NAME=SajhaDoctor
+VITE_DEBUG_MODE=true
+```
+
+### 5. Run the Local Development Server
+```bash
+npm run dev
+```
+Open your browser and navigate to `http://localhost:5173` to view the running app.
+
+---
+
+## 🎨 UI Showcase
 
 <div align="center">
-
-<h4>Languages</h4>
-
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-
-<h4>ML / Data Science</h4>
-
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
-<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-<img src="https://img.shields.io/badge/XGBoost-F97316?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge"/>
-
-<h4>Web Development</h4>
-
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
-
-<h4>IoT & Hardware</h4>
-
-<img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white"/>
-<img src="https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=for-the-badge&logo=raspberry-pi&logoColor=white"/>
-<img src="https://img.shields.io/badge/ESP32-Embedded-red?style=for-the-badge"/>
-
-<h4>Tools</h4>
-
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-
+  <table border="0">
+    <tr>
+      <td>
+        <img src="Frontend/public/doctor-1.png" width="260" alt="Specialist Doctor Card"/>
+      </td>
+      <td>
+        <img src="Frontend/public/doctor-2.png" width="260" alt="Consultation Portal"/>
+      </td>
+      <td>
+        <img src="Frontend/public/doctor-3.png" width="260" alt="Telehealth Interface"/>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Code4Sake&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Code4Sake&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=Code4Sake&theme=tokyonight&hide_border=true&background=0D1117&stroke=6EF7F7&ring=6EF7F7&fire=FF6B6B&currStreakLabel=6EF7F7"/>
-
-</div>
+## 🤝 Contributing
+Contributions to SajhaDoctor are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
 
 ---
 
-## 🌐 Connect With Me
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/rohitpoudel">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-<a href="mailto:rohitpoudel020@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-<a href="https://www.rohitpoudel.com.np">
-  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
-</a>
-<a href="https://github.com/Code4Sake">
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-</div>
+## 📄 License
+This project is licensed under the MIT License.
 
 ---
 
 <div align="center">
-
-<i>"I started coding because I wanted to build things that actually work — not just write code for the sake of it."</i>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
-
+  <p><i>"हाम्रो लक्ष्य: हरेक नेपालीका लागि सुलभ र गुणस्तरीय स्वास्थ्य सेवा।" (Our goal: Accessible and quality healthcare for every Nepali.)</i></p>
 </div>
