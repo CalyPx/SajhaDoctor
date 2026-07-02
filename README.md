@@ -133,25 +133,6 @@ Open your browser and navigate to `http://localhost:5173` to view the running ap
 
 ---
 
-## 🎨 UI Showcase
-
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img src="Frontend/public/doctor-1.png" width="260" alt="Specialist Doctor Card"/>
-      </td>
-      <td>
-        <img src="Frontend/public/doctor-2.png" width="260" alt="Consultation Portal"/>
-      </td>
-      <td>
-        <img src="Frontend/public/doctor-3.png" width="260" alt="Telehealth Interface"/>
-      </td>
-    </tr>
-  </table>
-</div>
-
----
 
 ## 🤝 Contributing
 Contributions to SajhaDoctor are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
